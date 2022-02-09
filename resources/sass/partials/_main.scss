@@ -1,0 +1,36 @@
+main {
+
+    // Banner 
+    .banner {
+        width: 100%;
+        background-image: url('~/images/jumbotron.jpg');
+
+        .container {
+            .banner-container {
+                height: 400px;
+                position: relative;
+                a {
+                    font-size: 20px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -20px;
+                }
+            }
+        }
+    }
+
+    // Comics List 
+    .comic-list {
+        background-color: #1c1c1c;
+        .container {
+            .comic-list-container {
+                padding: 50px 0px 20px;
+                display: flex;
+                flex-wrap: wrap;
+                a {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

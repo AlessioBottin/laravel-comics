@@ -28,6 +28,31 @@ body {
   margin: auto;
 }
 
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 3px solid #0282f9;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-blue {
+  background-color: #0282f9;
+}
+
+.btn-transparent {
+  background-color: none;
+}
+
+.btn-wide {
+  padding: 5px 30px;
+  font-size: 15px;
+}
+
+.btn-regular {
+  padding: 10px 15px;
+}
+
 header {
   text-transform: uppercase;
   font-weight: bold;
@@ -62,5 +87,53 @@ header nav .container .flex ul {
 
 header nav .container .flex ul li {
   margin-left: 40px;
+}
+
+main .banner {
+  width: 100%;
+  background-image: url("/images/jumbotron.jpg");
+}
+
+main .banner .container .banner-container {
+  height: 400px;
+  position: relative;
+}
+
+main .banner .container .banner-container a {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+main .comic-list {
+  background-color: #1c1c1c;
+}
+
+main .comic-list .container .comic-list-container {
+  padding: 50px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .comic-list .container .comic-list-container a {
+  margin: auto;
+}
+
+.single-comic {
+  margin: 0 20px 20px;
+  width: calc(16.6666666667% - 40px);
+}
+
+.single-comic .thumbnail {
+  margin-bottom: 20px;
+  height: 175px;
+  overflow-y: hidden;
+}
+
+.single-comic .comic-name {
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
 }
 
