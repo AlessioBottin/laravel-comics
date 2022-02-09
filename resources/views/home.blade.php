@@ -16,7 +16,7 @@ Home
     </section>
 
     {{-- Comics List  --}}
-    <div class="comic-list">
+    <section class="comic-list">
         <div class="container">
             <div class="comic-list-container">
 
@@ -28,7 +28,31 @@ Home
 
             </div>
         </div>
-    </div>
+    </section>
+
+    {{-- PreFooter  --}}
+    <section class="pre-footer">
+        <div class="container">
+            <div class="pre-footer-container">
+
+                @foreach ($items as $item)
+                    
+                    {{-- Single Item  --}}
+                    <div class="item-box">
+
+                        <!-- Img  -->
+                        <img src="{{ '../images/buy-' . $item['img_src'] }}" alt="{{ $item['text'] }}">
+
+                        <!-- Text  -->
+                        <div>{{ $item['text'] }}</div>
+
+                    </div>
+
+                @endforeach
+
+            </div>
+        </div>
+    </section>  
 
 
 @endsection
