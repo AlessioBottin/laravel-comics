@@ -6,7 +6,7 @@ Home
 
 @section('main_content')
     <section>
-        Main
+        
     </section>
 @endsection
 

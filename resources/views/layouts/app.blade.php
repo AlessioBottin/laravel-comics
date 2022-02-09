@@ -12,7 +12,20 @@
 <body>
 
     {{-- Header  --}}
-    @include('partials.header')
+    @include('partials.header', [
+        'links' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ]
+    ])
 
     {{-- Content  --}}
     <main>
