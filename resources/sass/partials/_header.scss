@@ -1,0 +1,12 @@
+header {
+    background-color: aqua;
+    .container {
+        // Top 
+        .top {
+            background-color: $primary_color;
+            color: $secondary_color;
+            text-align: right;
+            text-transform: uppercase;
+        }
+    }
+}

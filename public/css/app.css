@@ -1,0 +1,38 @@
+$primary_color: #0282f9;
+$secondary_color: white;
+$tertiary_color: black;
+// RESETS 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+// UTILITIES 
+
+.container {
+    width: 80%;
+    margin: auto;
+}header {
+    background-color: aqua;
+    .container {
+        // Top 
+        .top {
+            background-color: $primary_color;
+            color: $secondary_color;
+            text-align: right;
+            text-transform: uppercase;
+        }
+    }
+}
+
