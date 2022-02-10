@@ -9,5 +9,6 @@ Product Details
     @include('components.banner')
 
     @include('components.single-comic-details') 
+    
 @endsection
 
