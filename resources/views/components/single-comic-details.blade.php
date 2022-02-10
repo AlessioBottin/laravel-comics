@@ -87,7 +87,7 @@
                             @endforeach
                         </div>
                     </div>
-                    
+
                 </div>
 
                 {{-- Specs  --}}
@@ -95,9 +95,32 @@
 
                     <h3>Specs</h3>
 
-                    
+                    {{-- Series  --}}
+                    <div class="row">
+                        <div class="tertiary">Series:</div>
 
+                        <div class="primary">
+                            {{ $comic_info['series'] }}
+                        </div>
+                    </div>
 
+                    {{-- Price  --}}
+                    <div class="row">
+                        <div class="tertiary">Price:</div>
+
+                        <div class="primary">
+                            {{ $comic_info['price'] }}
+                        </div>
+                    </div>
+
+                    {{-- On Sale  --}}
+                    <div class="row">
+                        <div class="tertiary">On sale date:</div>
+
+                        <div class="primary">
+                            {{ $comic_info['sale_date'] }}
+                        </div>
+                    </div>
 
                 </div>
 
