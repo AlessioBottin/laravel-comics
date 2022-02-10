@@ -32,6 +32,20 @@ body {
     margin: auto;
 }
 
+.container-small {
+    width: 50%;
+    margin: auto;
+}
+
+// Colors 
+.primary {
+    color: $primary_color;
+}
+
+.tertiary {
+    color: $tertiary_color;
+}
+
 // Buttons 
 .btn {
     display: inline-block;

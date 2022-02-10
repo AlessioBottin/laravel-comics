@@ -7,23 +7,22 @@ Home
 @section('main_content')
 
     {{-- Banner  --}}
-    <section class="banner">
-        <div class="container">
-            <div class="banner-container">
-                <a href="#" class="btn btn-regular btn-blue">current series</a>
-            </div>
-        </div>
-    </section>
+    @include('components.banner')
 
     {{-- Comics List  --}}
     <section class="comic-list">
         <div class="container">
             <div class="comic-list-container">
 
+                {{-- Title  --}}
+                <a href="#" class="title btn btn-regular btn-blue">current series</a>
+
+                {{-- Single comic  --}}
                 @foreach ($comics as $comic)
                     @include('components.comic-card', $comic)
                 @endforeach
 
+                {{-- Load more  --}}
                 <a href="#" class="btn btn-wide btn-blue">load more</a>
 
             </div>
@@ -35,7 +34,7 @@ Home
         <div class="container">
             <div class="pre-footer-container">
 
-                @foreach ($items as $item)
+                @foreach ($pre_footer_items as $item)
                     
                     {{-- Single Item  --}}
                     <div class="item-box">

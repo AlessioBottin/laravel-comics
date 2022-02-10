@@ -1,6 +1,6 @@
 <div class="single-comic">
 
-    <a href="#">
+    <a href="{{ route('product', ['id' => $comic['id']]) }}">
         <!-- Thumbnail  -->
         <div class="thumbnail">
             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
