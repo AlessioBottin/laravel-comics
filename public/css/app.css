@@ -73,9 +73,6 @@ header .top {
   height: 30px;
   line-height: 30px;
 }
-header nav {
-  padding: 20px 0;
-}
 header nav .container .flex {
   display: flex;
   justify-content: space-between;
@@ -90,6 +87,11 @@ header nav .container .flex ul {
 }
 header nav .container .flex ul li {
   margin-left: 40px;
+  display: inline-block;
+  line-height: 120px;
+}
+header nav .container .flex ul li.active {
+  border-bottom: 5px solid #0282f9;
 }
 
 main .banner {

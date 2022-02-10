@@ -20,8 +20,13 @@
                 {{-- Links  --}}
                 <ul>
                     @foreach ($links as $link)
-                        <li>
-                            <a class="link" href="#">{{ $link }}</a>
+                        <li class="{{ Request::route()->getName() === $link['route'] ? 'active' : '' }}">
+                            <a 
+                                class="link" 
+                                href="{{ $link['route'] === '#' ? '#' : route( $link['route']) }}"
+                            >
+                                {{ $link['text'] }}
+                            </a>
                         </li> 
                     @endforeach
                 </ul>

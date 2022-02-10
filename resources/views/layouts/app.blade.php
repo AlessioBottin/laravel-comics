@@ -14,16 +14,46 @@
     {{-- Header  --}}
     @include('partials.header', [
         'links' => [
-            'characters',
-            'comics',
-            'movies',
-            'tv',
-            'games',
-            'collectibles',
-            'videos',
-            'fans',
-            'news',
-            'shop'
+            'characters' => [
+                'text' => 'characters',
+                'route' => '#'
+            ],
+            'comics' => [
+                'text' => 'comics',
+                'route' => 'home'
+            ],
+            'movies' => [
+                'text' => 'movies',
+                'route' => '#'
+            ],
+            'tv' => [
+                'text' => 'tv',
+                'route' => '#'
+            ],
+            'games' => [
+                'text' => 'games',
+                'route' => '#'
+            ],
+            'collectibles' => [
+                'text' => 'collectibles',
+                'route' => '#'
+            ],
+            'videos' => [
+                'text' => 'videos',
+                'route' => '#'
+            ],
+            'fans' => [
+                'text' => 'fans',
+                'route' => '#'
+            ],
+            'news' => [
+                'text' => 'news',
+                'route' => '#'
+            ],
+            'shop' => [
+                'text' => 'shop',
+                'route' => '#'
+            ]
         ]
     ])
 
